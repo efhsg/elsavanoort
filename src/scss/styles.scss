@@ -12,3 +12,11 @@ body {
 .bg-color {
   background: $bg-color;
 }
+
+.navbar {
+  border-bottom: 1px solid $color;
+}
+
+#navbarContent {
+  font-variant: small-caps;
+}
