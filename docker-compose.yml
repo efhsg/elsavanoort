@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  nginx:
+    container_name: elsavanoort
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./logs/nginx/:/var/log/nginx
+      - ./src:/usr/share/nginx/html
