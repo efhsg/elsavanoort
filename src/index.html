@@ -12,9 +12,17 @@
 </head>
 <body>
 <div class="container">
-    <div class="d-md-flex justify-content-center border-bottom">
+
+
+    <div class="d-md-flex justify-content-center pt-5 d-none d-md-block">
+        <div class="row">
+            <div class="col"><h3>Elsa van Oort</h3></div>
+        </div>
+    </div>
+
+    <div class="d-md-flex justify-content-center my-border-bottom">
         <nav class="navbar navbar-expand-md navbar-dark">
-            <a class="navbar-brand" href="#">Elsa van Oort</a>
+            <a class="navbar-brand d-block d-md-none" href="#">Elsa van Oort</a>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarContent"
                     aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,6 +31,9 @@
 
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">home</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">abstract</a>
                     </li>
@@ -42,6 +53,41 @@
             </div>
         </nav>
     </div>
+
+
+    <div id="carouselHome" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselHome" data-slide-to="1"></li>
+                    <li data-target="#carouselHome" data-slide-to="2"></li>
+                </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="parent d-flex justify-content-center">
+                    <img class="d-block w-50 h-50" src="img/abstract_05.jpg" alt="slide">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="parent d-flex justify-content-center">
+                    <img class="w-50 h-50" src="img/picasso_02.jpg" alt="slide">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="parent d-flex justify-content-center">
+                    <img class="w-50 h-50" src="img/abstract_11.jpg" alt="slide">
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Vorige</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselHome" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Volgende</span>
+        </a>
+    </div>
+
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
