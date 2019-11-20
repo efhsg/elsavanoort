@@ -1,6 +1,11 @@
 @import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
+$bootstrap-sm: map-get($grid-breakpoints, sm);
+$bootstrap-md: map-get($grid-breakpoints, md);
+$bootstrap-lg: map-get($grid-breakpoints, lg);
+$bootstrap-xl: map-get($grid-breakpoints, xl);
+
 $bg-color: #333333;
 $color: #eeeeee;
 $color-light: #ffffff;
@@ -136,4 +141,40 @@ p {
   content: '<';
   font-size: 1.5rem;
   color: $color;
+}
+
+// lightbox
+// Crop thumbnail images.
+.myGallery {
+  padding-top: 1rem;
+  > div {
+    padding: 1rem;
+  }
+
+  img {
+    height: 40vw;
+    object-fit: cover;
+
+    @media (min-width: $bootstrap-md) {
+      height: 25vw;
+    }
+
+    @media (min-width: $bootstrap-lg) {
+      height: 18vw;
+    }
+  }
+}
+
+
+// Crop images in lightbox.
+.carousel-item {
+
+  img {
+    height: 60vw;
+    object-fit: cover;
+
+    @media (min-width: $bootstrap-sm) {
+      height: 350px;
+    }
+  }
 }
