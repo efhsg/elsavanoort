@@ -28,6 +28,7 @@ hr {
 
 a {
   color: $color;
+
   &:hover, &:active, &:visited {
     text-decoration: none;
     color: $color;
@@ -89,7 +90,6 @@ a {
       }
     }
   }
-
 }
 
 // navbar
@@ -157,7 +157,7 @@ a {
 // carousel
 .carousel {
   padding-top: 1rem;
-  margin-top: 3rem;
+  margin-top: 0;
   margin-bottom: 3rem;
 }
 
@@ -225,43 +225,61 @@ a {
   color: $color;
 }
 
-#carouselHome {
-  margin-top: 2rem;
+#home {
+  .title {
+    margin: 2rem 0 0 0;
+  }
 }
 
-// lightbox
-// Crop thumbnail images.
+// gallery
 .myGallery {
-  padding-top: 1rem;
+
+  padding: .5rem 0;
 
   > div {
-    padding: 1rem;
-  }
+    padding-top: 15px;
+    padding-bottom: 15px;
 
-  img {
-    height: 40vw;
-    object-fit: cover;
+    img {
+      cursor: zoom-in;
+      transition: transform .3s ease;
 
-    @media (min-width: $bootstrap-md) {
-      height: 25vw;
-    }
-
-    @media (min-width: $bootstrap-lg) {
-      height: 18vw;
+      &:hover {
+        transform: scale(1.3);
+      }
     }
   }
 }
 
+// modal
+.modal {
+  .modal-dialog {
+    .modal-header {
+      margin: 0;
+      padding: 0 .6rem 0 0;
+      border: none;
+      button {
+        span {
+          font-size: 1.5rem;
+        }
+      }
+    }
 
-// Crop images in lightbox.
-.carousel-item {
+    .modal-content {
+      background: $bg-color;
+      border: none;
+      background: $color;
 
-  img {
-    height: 60vw;
-    object-fit: cover;
+      .modal-body {
+        background: $bg-color;
+        margin: 0 .5rem .5rem .5rem;
+        padding: 0;
 
-    @media (min-width: $bootstrap-sm) {
-      height: 350px;
+        .carousel {
+          margin: 0;
+          padding: 0;
+        }
+      }
     }
   }
 }
