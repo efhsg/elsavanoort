@@ -51,6 +51,11 @@ a {
   border-bottom: 1px solid $color;
 }
 
+div.header {
+  font-size: 1.5rem;
+  margin: .5rem 0 .5rem 0;
+}
+
 // scrollSpy
 .my-offset:before {
   height: 11rem;
