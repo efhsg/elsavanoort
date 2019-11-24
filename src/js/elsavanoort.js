@@ -1,4 +1,4 @@
-$(document).ready(function () {
+function closeHamburgermenuOnClick() {
     $(document).click(function (event) {
         var clickover = $(event.target);
         var opened = $('.navbar-collapse').hasClass('show');
@@ -6,9 +6,9 @@ $(document).ready(function () {
             $('.navbar-toggler').click();
         }
     })
-});
+}
 
-$(document).ready(function () {
+function scrollToHashOnNavbarLink() {
     $('a').on('click', function (event) {
         if (this.hash !== '' && $(this).parents('#navbarContent').length > 0) {
             event.preventDefault();
@@ -20,4 +20,9 @@ $(document).ready(function () {
             })
         }
     })
+}
+
+$(document).ready(function () {
+    closeHamburgermenuOnClick();
+    scrollToHashOnNavbarLink();
 });
