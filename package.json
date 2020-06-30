@@ -1,7 +1,7 @@
 {
   "name": "elsavanoort",
   "version": "1.0.0",
-  "description": "",
+  "description": "Website evo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,7 @@
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0",
     "save": "^2.4.0"
